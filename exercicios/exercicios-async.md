@@ -169,8 +169,12 @@ const somaAsync = function (a, b) {
     });
 }
 
-somaAsync(2,2).then(resultado => console.log('O resultado da soma é', resultado));
-somaAsync(11,2).catch(error => console.log(error));
+somaAsync(2,2)
+    .then(resultado => console.log('O resultado da soma é', resultado))
+    .catch(error => console.log(error));
+somaAsync(12,2)
+    .then(resultado => console.log('O resultado da soma é', resultado))
+    .catch(error => console.log(error));
 ```
 
 ## 5
